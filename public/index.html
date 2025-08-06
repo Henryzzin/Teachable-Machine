@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Teachable Machine Local</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://unpkg.com/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+  <h1>Teste seu modelo Teachable Machine</h1>
+  <video id="webcam" autoplay playsinline width="224" height="224" style="display:none"></video>
+  <button onclick="init()">Iniciar Webcam IA</button>
+  <br>
+  <input type="file" id="imageUpload" accept="image/*">
+  <br>
+  <img id="uploadedImage" style="display:none"/>
+  <button onclick="predictImage()">Classificar Imagem</button>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
